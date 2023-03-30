@@ -1,0 +1,28 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+
+class Copyarr {
+    public static void main(String[] args) {
+    Scanner sc= new Scanner(System.in);
+    {
+        int arr1[] = new int[5] ;
+        
+        int arr2[] = new int[arr1.length];
+        System.out.print("Enter any array:");
+        for (int i = 0; i < arr1.length; i++) 
+        {
+            arr1[i] = sc.nextInt();
+            arr2[i] = arr1[i];
+        }
+           Arrays.sort(arr2);
+           System.out.print("new array:");
+           
+           for(int i=0;i<arr2.length;i++)
+        {
+            System.out.print (arr2[i]+ " ");
+           
+        }
+        
+    }
+}}
